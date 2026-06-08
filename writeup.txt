@@ -113,7 +113,7 @@ pass = HZKAxfnMj-$xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ```bash
 rclone reveal "HZKAxfnMj-$xxxxxxxxxxxxxxxxxxxxxxxxxxx"
-# → iXzvcib3SrpZ
+# → decyrpted passwd
 ```
 
 rclone stores passwords in its own obfuscation format. The `reveal` command decodes it to plaintext.
@@ -122,7 +122,7 @@ rclone stores passwords in its own obfuscation format. The `reveal` command deco
 
 ```bash
 ssh scott@TARGETIP
-# password: iXzvcib3SrpZ
+# password: xxxxxxxxxxxxxx
 ```
 
 **Result:** Shell as `scott`. Grab `user.txt`:
