@@ -7,4 +7,4 @@ nmap → SMB Enumeration → CVE-2026-4480 RCE (nobody)
 → systemd drop-in + polkit (root)
 Files
 
-writeup.txt — Full step-by-step walkthrough
+writeup.md — Full step-by-step walkthrough
