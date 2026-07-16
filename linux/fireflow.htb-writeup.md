@@ -1,6 +1,6 @@
 # HackTheBox — FireFlow | Full Writeup
 
-FireFlow is a Hard-difficulty Linux/Kubernetes machine built around a Langflow (AI flow-builder) deployment. The attack chain starts with an unauthenticated arbitrary-code-execution flaw in Langflow's public playground API, moves laterally through harvested application credentials to a local user, pivots into an internal MCP ("Model Context Protocol") AI Tool Registry service via a JWT `alg=none` signature-bypass, and finally escalates out of a Kubernetes pod to the underlying host by abusing a `nodes/proxy` RBAC permission against a privileged `node-exporter` pod with a `hostPath` mount.
+FireFlow is a Medium-difficulty Linux/Kubernetes machine built around a Langflow (AI flow-builder) deployment. The attack chain starts with an unauthenticated arbitrary-code-execution flaw in Langflow's public playground API, moves laterally through harvested application credentials to a local user, pivots into an internal MCP ("Model Context Protocol") AI Tool Registry service via a JWT `alg=none` signature-bypass, and finally escalates out of a Kubernetes pod to the underlying host by abusing a `nodes/proxy` RBAC permission against a privileged `node-exporter` pod with a `hostPath` mount.
 
 ---
 
